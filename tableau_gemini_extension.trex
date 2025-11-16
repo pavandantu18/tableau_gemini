@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1"
+          xmlns="http://www.tableau.com/xml/extension_manifest">
+
+  <dashboard-extension id="com.pavan.geminiassistant"
+                       extension-version="1.0.0">
+
+    <default-locale>en_US</default-locale>
+
+    <name>Gemini Dashboard Assistant</name>
+
+    <description>
+      Gemini-powered assistant that reads Tableau worksheet summary data.
+    </description>
+
+    <author name="Pavan"
+            email="your_email@example.com"
+            website="https://example.com" />
+
+    <min-api-version>1.0</min-api-version>
+
+    <source-location>
+      <!-- This is your local FastAPI server -->
+      <url>http://localhost:8000</url>
+    </source-location>
+
+    <!-- icon is REQUIRED and must be base64-encoded binary -->
+    <!-- This is a tiny 1x1 transparent PNG -->
+    <icon>
+      iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/6XkS7kAAAAASUVORK5CYII=
+    </icon>
+
+    <!-- permissions, context-menu, disable-sorting-ui, layout are OPTIONAL -->
+    <!-- We omit them for now since we only use getSummaryDataAsync() -->
+
+  </dashboard-extension>
+</manifest>
