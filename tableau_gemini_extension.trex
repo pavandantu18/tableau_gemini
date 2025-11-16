@@ -21,7 +21,7 @@
 
     <source-location>
       <!-- This is your local FastAPI server -->
-      <url>http://localhost:8000</url>
+      <url>https://tableau-gemini.onrender.com/</url>
     </source-location>
 
     <!-- icon is REQUIRED and must be base64-encoded binary -->
